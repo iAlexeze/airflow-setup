@@ -1,0 +1,30 @@
+[2024-10-15T01:15:13.360+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-15T01:15:13.377+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: asalex.read_asalex_to_file manual__2024-10-15T01:15:05.718511+00:00 [queued]>
+[2024-10-15T01:15:13.386+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: asalex.read_asalex_to_file manual__2024-10-15T01:15:05.718511+00:00 [queued]>
+[2024-10-15T01:15:13.386+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-15T01:15:13.400+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): read_asalex_to_file> on 2024-10-15 01:15:05.718511+00:00
+[2024-10-15T01:15:13.407+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=279) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-15T01:15:13.408+0000] {standard_task_runner.py:72} INFO - Started process 281 to run task
+[2024-10-15T01:15:13.410+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'asalex', 'read_asalex_to_file', 'manual__2024-10-15T01:15:05.718511+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/asalex.py', '--cfg-path', '/tmp/tmpwqxv5iyj']
+[2024-10-15T01:15:13.411+0000] {standard_task_runner.py:105} INFO - Job 43: Subtask read_asalex_to_file
+[2024-10-15T01:15:13.463+0000] {task_command.py:467} INFO - Running <TaskInstance: asalex.read_asalex_to_file manual__2024-10-15T01:15:05.718511+00:00 [running]> on host 599ca003dbbf
+[2024-10-15T01:15:13.571+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='asalex' AIRFLOW_CTX_TASK_ID='read_asalex_to_file' AIRFLOW_CTX_EXECUTION_DATE='2024-10-15T01:15:05.718511+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-15T01:15:05.718511+00:00'
+[2024-10-15T01:15:13.572+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-15T01:15:13.572+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-15T01:15:13.572+0000] {logging_mixin.py:190} INFO - Current task name:read_asalex_to_file state:running start_date:2024-10-15 01:15:13.378300+00:00
+[2024-10-15T01:15:13.572+0000] {logging_mixin.py:190} INFO - Dag name:asalex and current dag run status:running
+[2024-10-15T01:15:13.573+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-15T01:15:13.573+0000] {logging_mixin.py:190} INFO - Today, you will: Memorize a favorite quote or poem
+Today, you will: Fill out a basketball bracket
+[2024-10-15T01:15:13.574+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-15T01:15:13.583+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-15T01:15:13.584+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=asalex, task_id=read_asalex_to_file, run_id=manual__2024-10-15T01:15:05.718511+00:00, execution_date=20241015T011505, start_date=20241015T011513, end_date=20241015T011513
+[2024-10-15T01:15:13.594+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-15T01:15:13.594+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-15T01:15:13.594+0000] {logging_mixin.py:190} INFO - Dag name:asalex queued_at:2024-10-15 01:15:05.736384+00:00
+[2024-10-15T01:15:13.595+0000] {logging_mixin.py:190} INFO - Task hostname:599ca003dbbf operator:_PythonDecoratedOperator
+[2024-10-15T01:15:13.624+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-15T01:15:13.641+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-15T01:15:13.643+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
